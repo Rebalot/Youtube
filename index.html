@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stiles.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header"> 
+            <!-- height: 56px -->
+            <div class="nav_izquierda">
+                <label class="label_menu" for="menu_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="menu_list">
+                <a class="logo">
+                    <div class="logo_img">
+                        <img src="./images/Youtube_logo.png" alt="Youtube Logo">
+                    </div>
+                    <span class="country_code"></span>
+                </a>
+            </div>
+            <div class="nav_central">
+                <div class="barrabusqueda">
+                    <div class="barrabusqueda_contenedor">
+                        <input type="text" class="buscador_input" placeholder="Buscar">
+                    </div>
+                    <button class="buscador_lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="buscador_voz">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav_derecha">
+                <button class="boton_navderecha crear">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+                    </svg>
+                </button>
+                <button class="boton_navderecha notificacion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                    </svg>
+                </button>
+                <button class="boton_perfil">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <nav class="lateral">
+            <div class="nav_izquierda top">
+                <label class="label_menu" for="menu_list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="menu_list">
+                <a class="logo">
+                    <div class="logo_img">
+                        <img src="./images/Youtube_logo.png" alt="Youtube Logo">
+                    </div>
+                    <span class="country_code"></span>
+                </a>
+            </div>
+            <div class="nav_exte">
+                <!-- width:240px -->
+                <section class="navexte principal">
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Principal
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="22" height="22" viewBox="0 0 256 256" xml:space="preserve">
+
+                                <defs>
+                                </defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 69.186 38.498 c -1.406 -0.795 -2.751 -1.651 -4.34 -2.568 c 1.589 -0.978 3.057 -1.834 4.463 -2.629 c 6.541 -3.546 10.148 -10.759 9.047 -18.095 C 76.766 3.164 62.889 -3.804 52.375 2.186 C 41.616 8.361 30.857 14.413 20.22 20.77 c -8.436 5.074 -9.659 11.798 -8.314 19.745 c 0.856 4.952 4.157 8.619 8.497 11.126 c 1.528 0.856 2.995 1.712 4.646 2.69 c -1.834 1.1 -3.484 2.078 -5.257 2.995 c -7.825 4.952 -10.515 15.099 -6.113 23.291 c 4.646 8.62 15.405 11.921 24.024 7.275 c 9.292 -5.257 18.584 -10.637 27.815 -16.016 c 2.201 -1.284 4.524 -2.445 6.48 -4.035 C 81.84 59.649 80.373 44.795 69.186 38.498 z M 36.359 58.549 V 31.835 l 23.108 13.327 L 36.359 58.549 z" style="stroke: white; stroke-width: 4px; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Shorts
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z" style="stroke: white; stroke-width: 1px;"/></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Suscripciones
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte tu">
+                    <a class="navexte_contenedor">
+                        <div class="navexte_tu_boton_titulo">
+                            <h3>Tú</h3>
+                        </div>
+                        <div class="navexte_tu_boton_flecha">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Tu canal
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                                <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                                <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                                <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Historial
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                                <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Tus videos
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Ver más tarde
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                            </svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Mostrar más
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte suscripciones">
+                    <h3 class="navexte_h3">Suscripciones</h3>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            The Mexican Family
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Joha Senpai
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Steven Universe
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            PIMPNITE
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Lofi Girl
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            NEGAS
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor_suscripciones">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            XenoBlur
+                        </div>
+                        <div class="navexte_contenedor_status">
+                            <svg></svg>
+                            <!-- broadcast bootstrap -->
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Mostrar <span class="span_suscripciones"></span>más
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte explorar">
+                    <h3>Explorar</h3>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Tendencias
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Música
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Películas
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            En vivo
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Videojuegos
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Noticias
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Deportes
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Aprendizaje
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Podcasts
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte masdeyoutube">
+                    <h3>Más de YouTube</h3>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Youtube Premium
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Youtube Studio
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Youtube Music
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Youtube Kids
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte configuracion">
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Configuración
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Historial de denuncias
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Ayuda
+                        </div>
+                    </a>
+                    <a class="navexte_contenedor">
+                        <div class="navexte_contenedor_icon">
+                            <svg></svg>
+                        </div>
+                        <div class="navexte_contenedor_titulo">
+                            Enviar comentarios
+                        </div>
+                    </a>
+                </section>
+                <section class="navexte derechos">
+                    <p class="derechos"></p>
+                    <p class="derechos"></p>
+                    <p class="marcaregistrada"></p>
+                </section>
+            </div>
+            <div class="nav_redu" style="display: none;">
+                <!-- width:72px -->
+            </div>
+        </nav>
+        <div class="contenidogeneral">
+            <div class="nav_recomendacion">
+                
+                <div class="flecha izquierda hide">
+                    <!-- :after -->
+                    <div class="flechasombra izq">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </div>
+                    <div class="sombra izq"></div>
+                </div>
+                <ul class="recomendaciones">
+                    <li class="recomendacion active">
+                        Todos
+                    </li>
+                    <li class="recomendacion">
+                        Videojuegos
+                    </li>
+                    <li class="recomendacion">
+                        League of Legends
+                    </li>
+                    <li class="recomendacion">
+                        Yu-Gi-Oh! Duel Links
+                    </li>
+                    <li class="recomendacion">
+                        Dólares
+                    </li>
+                    <li class="recomendacion">
+                        Noticias
+                    </li>
+                    <li class="recomendacion">
+                        Hojas de estilos en cascada
+                    </li>
+                    <li class="recomendacion">
+                        Ahorros
+                    </li>
+                    <li class="recomendacion">
+                        Música
+                    </li>
+                    <li class="recomendacion">
+                        Bolsa de valores
+                    </li>
+                    <li class="recomendacion">
+                        En tiempo real
+                    </li>
+                    <li class="recomendacion">
+                        Teamfight Tactics
+                    </li>
+                    <li class="recomendacion">
+                        Crisis
+                    </li>
+                    <li class="recomendacion">
+                        Mixes
+                    </li>
+                    <li class="recomendacion">
+                        Hardware
+                    </li>
+                </ul>
+                <div class="flecha derecha">
+                    <!-- :before -->
+                    <div class="sombra dere"></div>
+                    <div class="flechasombra dere">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido">
+                <section class="contenido_videos first">
+                    <div class="video_contenedor">
+                        <div class="video_sup">
+                            <img src="./images/Miniatura1.png">
+                        </div>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_1.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">Effect Veiler GRATIS!! NUEVO TICKET UR ENSUEÑO!! [Campaña 2,500 Días] | Yu-Gi-Oh! Duel Links</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        XenoBlur
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            59 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 3 días</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura2.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_2.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">I MADE AHRI RAGE QUIT WITH MY BRAINLESS MISS FORTUNE MID (E BURNS AND EXECUTES)</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        TC Zwag
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            170 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 11 días</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura3.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_3.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">Create A Draggable Card Slider in HTML CSS & JavaScript | Infinite Image Slider in JavaScript</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        CodingNepal
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            117 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 11 meses</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura4.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_4.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">China responde a sanciones de EU, prohíbe chips Intel, AMD e incluso Microsoft</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        MILENIO
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            34 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 4 días</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura5.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_5.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">I love Mr Mime support! 70k damage!</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        Cbub14
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            24 vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 12 días</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura6.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_6.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">NVIDIA lanza la MEJOR GPU del MUNDO y avisa que el GAMING va a CAMBIAR | Noticias PC</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        Rincón de Varo - Hardware & PC Gaming
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            191 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 5 días</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura7.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_7.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">The BEST SURVIVOR PERK is Getting NERFED</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        Naymeti
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            32 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 1 día</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img src="./images/Miniatura8.png">
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg">
+                                <img src="./images/autorimg_2.png" alt="canalimg">
+                            </div>
+                            <div class="video_datos">
+                                <div class="video_titulo">ASHE, BUT I ATTACK SO FAST MY ARROWS LOOK LIKE A LASER (NEW ATTACK SPEED BUILD)</div>
+                                <div class="video_datosContenedor">
+                                    <div class="video_autor">
+                                        TC Zwag
+                                    </div>
+                                    <div class="video_datos_inf">
+                                        <div class="video_datos_vistas">
+                                            174 k vistas
+                                        </div>
+                                        <div class="video_dot">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="video_datos_since">hace 3 semanas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="Shorts">
+                    <div class="Short_sup">
+                        <div class="Short_logo">
+                            <div class="Short_img">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="22" height="22" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                        <path d="M 25.049 54.331 c -1.651 -0.978 -3.118 -1.834 -4.646 -2.69 c -4.34 -2.506 -7.641 -6.174 -8.497 -11.126 c -1.345 -7.947 -0.122 -14.671 8.314 -19.745 c 10.637 -6.358 21.396 -12.41 32.155 -18.584 c 10.515 -5.991 24.391 0.978 25.981 13.021 c 1.1 7.336 -2.506 14.549 -9.047 18.095 c -1.406 0.795 -2.873 1.651 -4.463 2.629 c 1.589 0.917 2.934 1.773 4.34 2.567 c 11.187 6.296 12.654 21.151 2.812 29.343 c -1.956 1.589 -4.279 2.751 -6.48 4.035 c -9.231 5.38 -18.523 10.759 -27.815 16.016 c -8.619 4.646 -19.379 1.345 -24.024 -7.275 c -4.401 -8.192 -1.712 -18.339 6.113 -23.291 C 21.565 56.41 23.215 55.431 25.049 54.331 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(253,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <polygon points="36.36,58.55 59.47,45.16 36.36,31.84 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h2 class="Short_titulo">Shorts</h2>
+                        </div>
+                        <a class="Short_cerrar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="Short_inf">
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+                                <img src="./images/Shorts/Miniatura1.png">
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_descriptitulo">KLAR VS NU #shorts</div>
+                                <div class="short_descripvistas">33 k vistas</div>
+                            </div>
+                        </div>
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+                                <img src="./images/Shorts/Miniatura5.png">
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_descriptitulo">Ai Draws Countries as Weapons!</div>
+                                <div class="short_descripvistas">6 M de vistas</div>
+                            </div>
+                        </div>
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+                                <img src="./images/Shorts/Miniatura4.png">
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_descriptitulo">¡LO DESCONOCIDO! 😱🔥 - NUEVO KILLER DE DBD #dbd #deadbydaylight #dbdshorts #dbdkiller #dbdgameplay</div>
+                                <div class="short_descripvistas">46 k vistas</div>
+                            </div>
+                        </div>
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+                                <img src="./images/Shorts/Miniatura7.png">
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_descriptitulo">¡Top 3 habilidades de licencia para killer en Dead by Daylight! 😈 #shorts</div>
+                                <div class="short_descripvistas">174 k vistas</div>
+                            </div>
+                        </div>
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_titulo"></div>
+                                <div class="short_vistas"></div>
+                            </div>
+                        </div>
+                        <div class="Short_videocontenedor">
+                            <div class="short_video">
+
+                            </div>
+                            <div class="short_descrip">
+                                <div class="short_titulo"></div>
+                                <div class="short_vistas"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- borde inferior shorts -->
+                    <div class="Short_mostrarmas">
+                        <div class="Short_mostrarmas_titulo"></div>
+                        <div class="Short_mostrarmas_flecha">
+                            <svg></svg>
+                        </div>
+                    </div>
+                </section>
+                <section class="contenido_videos second">
+                    <!-- grid: auto column, auto row -->
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img>
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg"></div>
+                            <div class="video_titulo"></div>
+                            <div class="video_datos">
+                                <div class="video_datos_sup">
+                                    <!-- autor -->
+                                </div>
+                                <div class="video_datos_inf">
+                                    <div class="video_datos_vistas"></div>
+                                    <div class="video_datos_since"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img>
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg"></div>
+                            <div class="video_titulo"></div>
+                            <div class="video_datos">
+                                <div class="video_datos_sup">
+                                    <!-- autor -->
+                                </div>
+                                <div class="video_datos_inf">
+                                    <div class="video_datos_vistas"></div>
+                                    <div class="video_datos_since"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img>
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg"></div>
+                            <div class="video_titulo"></div>
+                            <div class="video_datos">
+                                <div class="video_datos_sup">
+                                    <!-- autor -->
+                                </div>
+                                <div class="video_datos_inf">
+                                    <div class="video_datos_vistas"></div>
+                                    <div class="video_datos_since"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_contenedor">
+                        <a class="video_sup">
+                            <img>
+                        </a>
+                        <div class="video_inf">
+                            <div class="video_autorimg"></div>
+                            <div class="video_titulo"></div>
+                            <div class="video_datos">
+                                <div class="video_datos_sup">
+                                    <!-- autor -->
+                                </div>
+                                <div class="video_datos_inf">
+                                    <div class="video_datos_vistas"></div>
+                                    <div class="video_datos_since"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
