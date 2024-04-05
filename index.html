@@ -75,7 +75,7 @@
     <main>
         <nav class="lateral">
             <div class="nav_exte">
-                <!-- width:240px -->
+                <!-- width:260px -->
                 <section class="navexte principal">
                     <a class="navexte_contenedor">
                         <div class="navexte_contenedor_icon">
@@ -799,8 +799,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="Shorts">
-                    <div class="Short_sup">
+                <section class="seccion_mostrarmas">
+                    <!-- Shorts -->
+                    <div class="Secc_sup">
                         <div class="Short_logo">
                             <div class="Short_img">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="22" height="22" viewBox="0 0 256 256" xml:space="preserve">
@@ -813,13 +814,13 @@
                                     </g>
                                 </svg>
                             </div>
-                            <h2 class="Short_titulo">Shorts</h2>
+                            <h2 class="Secc_titulo">Shorts</h2>
                         </div>
-                        <a class="Short_cerrar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        <button class="Boton_cerrar">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" fill="white" width="24" focusable="false" style="pointer-events: none; display: inherit;">
+                                <path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path>
                             </svg>
-                        </a>
+                        </button>
                     </div>
                     <div class="Short_inf">
                         <div class="Short_videocontenedor">
@@ -880,88 +881,154 @@
                             </div>
                         </div>
                     </div>
-                    <!-- borde inferior shorts -->
-                    <div class="Short_mostrarmas">
-                        <div class="Short_mostrarmas_titulo"></div>
-                        <div class="Short_mostrarmas_flecha">
-                            <svg></svg>
+                    <button class="Boton_mostrarmas">
+                        <div class="Boton_mostrarmas_titulo">Mostrar más</div>
+                        <div class="Boton_mostrarmas_flecha">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                            </svg>
                         </div>
-                    </div>
+                    </button>
                 </section>
                 <section class="contenido_videos second">
-                    <!-- grid: auto column, auto row -->
-                    <div class="video_contenedor">
-                        <a class="video_sup">
-                            <img>
-                        </a>
-                        <div class="video_inf">
-                            <div class="video_autorimg"></div>
-                            <div class="video_titulo"></div>
-                            <div class="video_datos">
-                                <div class="video_datos_sup">
-                                    <!-- autor -->
+                    
+                </section>
+                <section class="seccion_mostrarmas">
+                    <!-- Noticias destacadas -->
+                    <div class="Secc_sup">
+                        <h2 class="Secc_titulo Noticias">Noticias destacadas</h2>
+                        <button class="Boton_cerrar">
+                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" fill="white" width="24" focusable="false" style="pointer-events: none; display: inherit;">
+                                <path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="contenido_videos noticia">
+                        <div class="video_contenedor">
+                            <div class="video_sup">
+                                <img src="./images/Miniatura9.png">
+                            </div>
+                            <div class="video_inf">
+                                <div class="video_autorimg">
+                                    <img src="./images/autorimg_14.png" alt="canalimg">
                                 </div>
-                                <div class="video_datos_inf">
-                                    <div class="video_datos_vistas"></div>
-                                    <div class="video_datos_since"></div>
+                                <div class="video_datos">
+                                    <div class="video_titulo">NU lo hace de nuevo, ¿seguirá la batalla de las tasas? #299</div>
+                                    <div class="video_datosContenedor">
+                                        <div class="video_autor">
+                                            Campeones Financieros
+                                        </div>
+                                        <div class="video_datos_inf">
+                                            <div class="video_datos_vistas">
+                                                23 k vistas
+                                            </div>
+                                            <div class="video_dot">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                                </svg>
+                                            </div>
+                                            <div class="video_datos_since">hace 2 días</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_contenedor">
+                            <div class="video_sup">
+                                <img src="./images/Miniatura10.png">
+                            </div>
+                            <div class="video_inf">
+                                <div class="video_autorimg">
+                                    <img src="./images/autorimg_15.png" alt="canalimg">
+                                </div>
+                                <div class="video_datos">
+                                    <div class="video_titulo">HAY UN NUEVO PRO Y QUIERE CAMBIAR EL METAGAME</div>
+                                    <div class="video_datosContenedor">
+                                        <div class="video_autor">
+                                            Nacho AoE
+                                        </div>
+                                        <div class="video_datos_inf">
+                                            <div class="video_datos_vistas">
+                                                90 k vistas
+                                            </div>
+                                            <div class="video_dot">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                                </svg>
+                                            </div>
+                                            <div class="video_datos_since">hace 1 mes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_contenedor">
+                            <div class="video_sup">
+                                <img src="./images/Miniatura11.png">
+                            </div>
+                            <div class="video_inf">
+                                <div class="video_autorimg">
+                                    <img src="./images/autorimg_16.png" alt="canalimg">
+                                </div>
+                                <div class="video_datos">
+                                    <div class="video_titulo">Haz esto para que el SAT te regrese impuestos | DEDUCCIONES PERSONALES</div>
+                                    <div class="video_datosContenedor">
+                                        <div class="video_autor">
+                                            Luis Mi Negocios
+                                        </div>
+                                        <div class="video_datos_inf">
+                                            <div class="video_datos_vistas">
+                                                76 k vistas
+                                            </div>
+                                            <div class="video_dot">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                                </svg>
+                                            </div>
+                                            <div class="video_datos_since">hace 3 semanas</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_contenedor">
+                            <div class="video_sup">
+                                <img src="./images/Miniatura12.png">
+                            </div>
+                            <div class="video_inf">
+                                <div class="video_autorimg">
+                                    <img src="./images/autorimg_17.png" alt="canalimg">
+                                </div>
+                                <div class="video_datos">
+                                    <div class="video_titulo">Te decimos dónde podrás disfrutar del Eclipse Solar 🌓🌖🌒</div>
+                                    <div class="video_datosContenedor">
+                                        <div class="video_autor">
+                                            24 HORAS. El Diario sin Límites
+                                        </div>
+                                        <div class="video_datos_inf">
+                                            <div class="video_datos_vistas">
+                                                1.4 k vistas
+                                            </div>
+                                            <div class="video_dot">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                                </svg>
+                                            </div>
+                                            <div class="video_datos_since">hace 1 horas</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="video_contenedor">
-                        <a class="video_sup">
-                            <img>
-                        </a>
-                        <div class="video_inf">
-                            <div class="video_autorimg"></div>
-                            <div class="video_titulo"></div>
-                            <div class="video_datos">
-                                <div class="video_datos_sup">
-                                    <!-- autor -->
-                                </div>
-                                <div class="video_datos_inf">
-                                    <div class="video_datos_vistas"></div>
-                                    <div class="video_datos_since"></div>
-                                </div>
-                            </div>
+                    <button class="Boton_mostrarmas">
+                        <div class="Boton_mostrarmas_titulo">Mostrar más</div>
+                        <div class="Boton_mostrarmas_flecha">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="video_contenedor">
-                        <a class="video_sup">
-                            <img>
-                        </a>
-                        <div class="video_inf">
-                            <div class="video_autorimg"></div>
-                            <div class="video_titulo"></div>
-                            <div class="video_datos">
-                                <div class="video_datos_sup">
-                                    <!-- autor -->
-                                </div>
-                                <div class="video_datos_inf">
-                                    <div class="video_datos_vistas"></div>
-                                    <div class="video_datos_since"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video_contenedor">
-                        <a class="video_sup">
-                            <img>
-                        </a>
-                        <div class="video_inf">
-                            <div class="video_autorimg"></div>
-                            <div class="video_titulo"></div>
-                            <div class="video_datos">
-                                <div class="video_datos_sup">
-                                    <!-- autor -->
-                                </div>
-                                <div class="video_datos_inf">
-                                    <div class="video_datos_vistas"></div>
-                                    <div class="video_datos_since"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </button>
                 </section>
             </div>
         </div>
