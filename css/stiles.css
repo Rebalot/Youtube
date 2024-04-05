@@ -687,8 +687,11 @@ nav.lateral h3{
     .video_contenedor{
         padding: 0;
     }
+    .seccion_mostrarmas{
+        padding-right: 0;
+    }
     .Short_inf {
-        grid-template-columns: repeat(2,minmax(200px,1fr));
+        grid-template-columns: repeat(2,minmax(150px,1fr));
         
     }
     .contenidogeneral{
